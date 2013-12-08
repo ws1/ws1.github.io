@@ -1,0 +1,20 @@
+# Dependencies
+pygments:     true
+
+# Permalinks
+permalink:    pretty
+
+# Pagination
+paginate:     5
+
+# Meta data
+title:        WS1
+author:       Zlatan Vasović
+description:  Posts about design and programming, delivered frequently.
+keywords:     "ws1, github, design, programming"
+url:          http://ws1.github.io
+language:     en
+
+# Links and social networks
+twitter:      webserveri
+github:       ws1

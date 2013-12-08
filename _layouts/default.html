@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="{{ site.language }}">
+  <head>
+    <meta charset="utf-8">
+    <title>{% if page.title %}{{ page.title }} &middot; {% endif %}{{ site.title }}</title>
+    <meta name="author" content="{{ site.author }}">
+    <meta name="description" content="{{ site.description }}">
+    <meta name="keywords" content="{{ site.keywords }}">
+    <meta name="robots" content="noodp,noydir">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+  </head>
+  <body>
+    <div class="ws-container">
+      <div class="ws-head">
+        <h1>
+          <a href="/">
+            {{ site.title }}
+          </a>
+        </h1>
+        <p>
+          <img class="img-thumbnail img-circle ws-logo" src="/assets/img/ws1.png" width="150" height="150" alt="WS1">
+        </p>
+        <p>{{ site.description }}</p>
+        <ul class="list-inline">{% for item in site.pages %}{% if item.slug %}
+          <li>
+            <a href="{{ item.url }}">
+              <i class="fa fa-{{ item.icon }}"></i>
+              {{ item.title }}
+            </a>{% endif %}{% endfor %}
+          </li>
+          <li>
+            <a href="https://twitter.com/{{ site.twitter }}">
+              <i class="fa fa-twitter"></i>
+              Twitter
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/{{ site.github }}">
+              <i class="fa fa-github"></i>
+              GitHub
+            </a>
+          </li>
+        </ul>
+        <hr>
+      </div>
+      <section>
+        {{ content }}
+      </section>
+    </div>
+    <script>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-33643623-2']);
+      _gaq.push(['_trackPageview']);
+      (function () {
+        var ga = document.createElement('script'),
+            s = document.getElementsByTagName('script')[0];
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

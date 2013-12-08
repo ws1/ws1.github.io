@@ -1,0 +1,11 @@
+- name: Wuzzle
+  description: Grid puzzle
+  source: ws1/wuzzle
+  state: success
+  icon: puzzle-piece
+
+- name: Scripty
+  description: Shell script collection
+  source: ws1/scripty
+  state: danger
+  icon: code
