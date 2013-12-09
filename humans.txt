@@ -1,6 +1,22 @@
-# AUTHOR
+# FOUNDERS
 
+  Milutin Gavrilović -- @hightech
   Zlatan Vasović -- @zdr0id
+
+# STRATEGIST
+
+  Vladimir Popović -- @vladap
+
+# DESIGNER
+
+  Zlatan Vasović
+
+# TEAM
+
+  @nemysis
+  @Gaddafi
+  @kgb
+  @ludus
 
 # TECHNOLOGIES
 
