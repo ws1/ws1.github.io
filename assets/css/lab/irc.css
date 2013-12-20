@@ -1,0 +1,10 @@
+body {
+  color: #eee;
+  background-color: #292929;
+}
+
+iframe {
+  width: 100%;
+  height: 500px;
+  border: 0;
+}
