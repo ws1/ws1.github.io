@@ -20,25 +20,26 @@
           </a>
         </h1>
         <p>
-          <img class="img-thumbnail img-circle ws-logo" src="/assets/img/ws1.png" width="150" height="150" alt="WS1">
+          <img class="img-thumbnail img-circle ws-logo" src="/assets/img/ws1.png" width="150" height="150" alt="ws1">
         </p>
         <p>{{ site.description }}</p>
-        <ul class="list-inline">{% for item in site.pages %}{% if item.slug %}
+        <ul class="list-inline">
+{% for item in site.pages %}
+{% if item.slug %}
           <li>
             <a href="{{ item.url }}">
-              <i class="fa fa-{{ item.icon }}"></i>
               {{ item.title }}
-            </a>{% endif %}{% endfor %}
+            </a>
           </li>
+{% endif %}
+{% endfor %}
           <li>
             <a href="https://twitter.com/{{ site.twitter }}">
-              <i class="fa fa-twitter"></i>
               Twitter
             </a>
           </li>
           <li>
             <a href="https://github.com/{{ site.github }}">
-              <i class="fa fa-github"></i>
               GitHub
             </a>
           </li>

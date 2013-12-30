@@ -3,20 +3,20 @@
   Milutin Gavrilović -- @hightech
   Zlatan Vasović -- @zdr0id
 
-# STRATEGIST
-
-  Vladimir Popović -- @vladap
-
 # DESIGNER
 
   Zlatan Vasović
 
+# STRATEGIST
+
+  Vladimir Popović
+
 # TEAM
 
-  @nemysis
-  @Gaddafi
-  @kgb
-  @ludus
+  nemysis
+  Gaddafi
+  kgb
+  ludus
 
 # TECHNOLOGIES
 

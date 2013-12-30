@@ -2,14 +2,13 @@
 layout: default
 title: Projects
 slug: projects
-icon: rocket
 ---
 
 <p class="lead">These are our projects.</p>
-{% for project in site.data.projects %}<div class="panel panel-{{ project.state }}">
+{% for project in site.data.projects %}
+<div class="panel panel-{{ project.state }}">
   <div class="panel-heading">
     {{ project.name }}
-    <i class="fa fa-{{ project.icon }} pull-right"></i>
   </div>
   <div class="panel-body">
     <p>{{ project.description }}</p>
@@ -17,4 +16,5 @@ icon: rocket
       <a class="btn btn-{{ project.state }}" href="https://github.com/{{ project.source }}">Source</a>
     </p>
   </div>
-</div>{% endfor %}
+</div>
+{% endfor %}
