@@ -15,15 +15,21 @@
     <div class="ws-container">
       <div class="ws-head">
         <h1>
-          <a href="/">
-            {{ site.title }}
-          </a>
+          {{ site.title }}
         </h1>
         <p>
           <img class="img-thumbnail img-circle ws-logo" src="/assets/img/ws1.png" width="150" height="150" alt="ws1">
         </p>
         <p>{{ site.description }}</p>
         <ul class="list-inline">
+{% if page.title or page.slug %}
+          <li>
+            <a href="/">
+              <i class="fa fa-home"></i>
+              Home
+            </a>
+          </li>
+{% endif %}
 {% for item in site.pages %}
 {% if item.slug %}
           <li>
