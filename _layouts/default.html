@@ -22,23 +22,23 @@
         </p>
         <p>{{ site.description }}</p>
         <ul class="list-inline">
-{% if page.title or page.slug %}
+          {% if page.title or page.slug %}
           <li>
             <a href="/">
               <i class="fa fa-home"></i>
               Home
             </a>
           </li>
-{% endif %}
-{% for item in site.pages %}
-{% if item.slug %}
+          {% endif %}
+          {% for item in site.pages %}
+          {% if item.layout == "default" and item.title %}
           <li>
             <a href="{{ item.url }}">
               {{ item.title }}
             </a>
           </li>
-{% endif %}
-{% endfor %}
+          {% endif %}
+          {% endfor %}
           <li>
             <a href="https://twitter.com/{{ site.twitter }}">
               Twitter

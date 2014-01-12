@@ -9,8 +9,8 @@ paginate:     5
 
 # Meta data
 title:        ws1
-author:       "Zlatan Vasović"
-description:  "Official ws1 site and blog."
+author:       "ws1 team"
+description:  "Official ws1 site, blog and laboratory."
 keywords:     "ws1, github, design, programming"
 url:          "http://ws1.github.io"
 language:     en

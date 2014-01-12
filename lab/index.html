@@ -1,0 +1,18 @@
+---
+layout: default
+title: Lab
+---
+
+<p class="lead">These are our experiments.</p>
+
+<ul class="list-unstyled">
+{% for experiment in site.pages %}
+{% if experiment.layout == "lab" %}
+  <li>
+    <a href="{{ experiment.url }}">
+      {{ experiment.title }}
+    </a>
+  </li>
+{% endif %}
+{% endfor %}
+</ul>
