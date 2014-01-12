@@ -7,7 +7,7 @@ slug: youtube
 <div class="ws-container">
   <form>
     <legend>YouTube live search</legend>
-    <input class="form-control" type="search">
+    <input class="form-control" type="search" autofocus>
   </form>
   <div class="results"></div>
 </div>
@@ -15,7 +15,6 @@ slug: youtube
 <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
 <script>
   $(document).ready(function () {
-    $('.form-control').focus();
     $('.form-control').keyup(function () {
       var $input = $(this).val();
       var $keyword= encodeURIComponent($input);
